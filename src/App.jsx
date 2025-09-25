@@ -7,7 +7,7 @@ const sampleData = {
     "Motivated and adaptable professional with experience in customer service, online teaching, and clinic assistance. Skilled in communication, problem-solving, and building strong client relationships. Committed to delivering quality support and continuous personal growth.",
   contact: {
     address: "City of Minalin",
-    phone: "+63 935 465 2103",
+    phone: "+639354652103",
     email: "sivougastrell@gmail.com",
   },
   education: [
@@ -22,11 +22,11 @@ const sampleData = {
 
   ],
   skills: [
-    "Strong customer service and client relations",
-    "Effective oral and written communication",
-    "Online teaching and tutoring experience",
-    "Problem-solving and conflict resolution",
-    "Multitasking and time management",
+    "Delivering excellent customer service in every interaction",
+    "Communicating effectively through clear and respectful language",
+    "Designing engaging lessons tailored to diverse student needs",
+    "Resolving conflicts calmly while maintaining client satisfaction",
+    "Managing multiple tasks efficiently under tight time constraints",
   ],
   experience: [
     {
@@ -193,13 +193,13 @@ const css = `
   --sidebar: #084d72;
   --accent: #2f80b6;
   --muted: #6b7280;
-  --maxwidth: 980px;
+  --maxwidth: 1020px;
 }
 
 body, html, #root {
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   background: #f3f6f8;
 }
 
@@ -215,7 +215,7 @@ body, html, #root {
 
 /* Left column */
 .left-col {
-  width: 300px;
+  width: 320px;
   background: var(--sidebar);
   color: #fff;
   padding: 30px 26px;
@@ -283,6 +283,7 @@ body, html, #root {
 .contact-label {
   font-size: 18px;
   color: #cfe7ff;
+  font-weight: bold;
 }
 .contact-value {
   font-size: 18px;
@@ -290,17 +291,19 @@ body, html, #root {
 }
 
 .skills-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 6px 0 20px 0;
+  list-style: disc;          /* same bullet style as Experience */
+  padding-left: 20px;        /* same indent as job bullets */
+  margin: 10px 0 20px 0;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.45;         /* match Experience bullets */
+  color: #fff;               /* keep white text in sidebar */
 }
+
 .skills-list li {
-  margin-bottom: 8px;
-  padding-left: 12px;
-  position: relative;
+  margin-bottom: 6px;        /* same spacing as Experience list */
 }
+
+
 .skills-list li:before {
   content: '•';
   position: absolute;
@@ -308,7 +311,10 @@ body, html, #root {
   top: 0;
   color: #e6f3ff;
   font-weight: 700;
+  font-size: 18px;         /* match text size */
+  line-height: 1.6;        /* align bullet vertically */
 }
+
 
 /* Right column */
 .right-col {
@@ -328,7 +334,7 @@ body, html, #root {
 
 .section-heading {
   color: #084d72;
-  font-size: 30px;
+  font-size: 28px;
   margin: 20px 0 14px 0;
   padding-bottom: 8px;
   border-top: 2px solid #e6eef2;
@@ -362,7 +368,7 @@ body, html, #root {
 .edu-title {
   font-weight: 700;
   margin-bottom: 2px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .edu-school {
@@ -395,7 +401,7 @@ body, html, #root {
 .job-title {
   font-weight: 700;
   margin-bottom: 4px;
-  font-size: 25px;
+  font-size: 24px;
 }
 .job-company {
   font-style: italic;
